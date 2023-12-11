@@ -1,3 +1,4 @@
+//this program is used to calculates grade
 #include<iostream>
 #include<cstdlib>
 using namespace std;
