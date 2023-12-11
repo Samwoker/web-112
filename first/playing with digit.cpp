@@ -1,3 +1,7 @@
+//this program takes a number as input and prints reverse of the number,number of digits
+//the sum of digits,the product of even digits,first digit & last digit and their sum
+//swap the first and last digit,finds the frequency of each digit and prints in table format
+//checks whether a number is palindrome or not,perfect or not,armstrong or not and strong or not
 #include<iostream>
 #include<cmath>
 #include<iomanip>
@@ -6,7 +10,7 @@ using namespace std;
 int main() {
     int number;
     int temp, reversedNum = 0, sum = 0, aSum = 0, numDigits, digit; // aSum=armstrong sum
-    int firstDigit, middleDigit, lastDigit, swapNum;
+    int firstDigit, middleDigit, lastDigit, swapNum,flSum;//flSum is the sum of first digit and last digit
     int pEven = 1; // product of even digits
     bool hasEvenDigit=false;
     int fact=1,factSum=0,i,perfect=0;
@@ -20,7 +24,7 @@ int main() {
     lastDigit = temp % 10;
     middleDigit = (temp % static_cast<int>(pow(10, numDigits - 1))) / 10;
     swapNum = lastDigit * static_cast<int>(pow(10, numDigits - 1)) + middleDigit * 10 + firstDigit;
-
+    flSum=firstDigit+lastDigit;
     temp = number;
      while(temp>0){
         digit=temp%10;
@@ -104,6 +108,7 @@ int main() {
     cout << "last digit is " << lastDigit << endl;
     cout << "middle digit is " << middleDigit << endl;
     cout << "swapped number is " << swapNum << endl;
+    cout <<"the sum of first digit and last digit is"<<flSum<<endl;
      temp=originalReversedNum;
      int digitFrequency[10]={0};
      while(temp>0){
