@@ -1,3 +1,11 @@
+A.Problem Analysis
+Input- input variables test,quiz,assignment, finalExam and totalmark.
+Processing-  Check if each inputted mark is within acceptable range, if not display an error message.
+- If each inputted mark is within acceptable range, calculate the totalmark by summing all individual marks.
+Output - The total mark and its corresponding grades.
+
+
+pseudo code
 step 1:start
 step 2:read test,quiz,project,assignment,finalexam
 step 3:lowelimit=0,utest=15,uquiz=5,uproject=20
